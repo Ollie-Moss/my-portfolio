@@ -1,16 +1,22 @@
+import { useState } from "react";
+
 type Theme = 'dark' | 'light';
 
-type ThemeCallbacks = { setTheme: (newTheme: Theme) => void, toggleTheme: () => void };
+type ThemeCallbacks = { theme: Theme, updateTheme: (newTheme: Theme) => void, toggleTheme: () => void };
 
 
 export function useTheme(): ThemeCallbacks {
-    const setTheme = (newTheme: Theme): void => {
+    const [theme, setTheme] = useState<Theme>(document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+
+    const updateTheme = (newTheme: Theme): void => {
         document.documentElement.classList.toggle('dark', newTheme === 'dark');
+        setTheme(newTheme);
     }
 
     const toggleTheme = () => {
         document.documentElement.classList.toggle('dark');
+        setTheme(prev => prev === 'dark' ? 'light' : 'dark');
     }
 
-    return { setTheme, toggleTheme };
+    return { theme, updateTheme, toggleTheme };
 }
