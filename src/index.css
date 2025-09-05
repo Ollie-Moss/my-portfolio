@@ -6,9 +6,10 @@
   --font-sans: InterVariable, sans-serif;
   --font-sans--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
 
-  --color-bg: #06060a;
+  --color-bg: #201e22;
   --color-bg-light: #15131c;
-  --color-accent: #694fbf;
+  --color-accent: #8566ea;
+  --color-accent-dark: #553da7;
   --color-text: #f4f4f4;
   --color-white: #f4f4f4;
 
@@ -20,4 +21,23 @@
   --text-2xl: clamp(2.5rem, 3rem, 5vw);
   --text-3xl: clamp(2.5rem, 4rem, 6vw);
   --text-4xl: clamp(2.5rem, 5rem, 7vw);
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 0;
+  width: 80vw;
+  height: 100vh;
+  background: var(--color-accent);
+  background: radial-gradient(
+    circle,
+    var(--color-accent) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  border-radius: 50%;
+  transform: translate(-60%, -50%);
+  filter: blur(120px);
+  opacity: 0.1;
+  pointer-events: none;
 }
