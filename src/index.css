@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: InterVariable, sans-serif;
+  --font-sans--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+
+  --color-bg: #06060a;
+  --color-bg-light: #15131c;
+  --color-accent: #694fbf;
+  --color-text: #f4f4f4;
+  --color-white: #f4f4f4;
+
+  --text-xs: clamp(0.75rem, 0.9rem, 1.25vw);
+  --text-sm: clamp(0.9rem, 1rem, 1.75vw);
+  --text-base: clamp(1rem, 1.2rem, 2vw);
+  --text-lg: clamp(1.5rem, 1.8rem, 3vw);
+  --text-xl: clamp(2rem, 2.3rem, 4vw);
+  --text-2xl: clamp(2.5rem, 3rem, 5vw);
+  --text-3xl: clamp(2.5rem, 4rem, 6vw);
+  --text-4xl: clamp(2.5rem, 5rem, 7vw);
+}
