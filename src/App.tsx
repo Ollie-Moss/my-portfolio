@@ -1,9 +1,13 @@
-import './index.css'
+import Header from './components/Header'
 
 function App() {
-
     return (
-        <div></div>
+        <div className="transition-colors bg-white dark:bg-bg min-w-full min-h-[100vh]" >
+            <Header />
+            <main className='text-bg dark:text-white'>
+
+            </main>
+        </div>
     )
 }
 
