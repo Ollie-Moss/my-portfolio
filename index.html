@@ -2,12 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Ollie Moss: Software Developer & Student. Explore my projects in all types of developement"
+    />
+    <meta name="color-scheme" content="light dark" />
+
+    <title>Ollie Moss | Software Developer</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+
+    <script>
+      (() => {
+        const isDark = window.matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches;
+        if (isDark) {
+          document.documentElement.classList.add("dark");
+        }
+      })();
+    </script>
   </head>
-  <body>
-    <div id="root"></div>
+  <body class="h-fit">
+    <div id="root" class="h-fit"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
