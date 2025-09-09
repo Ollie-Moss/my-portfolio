@@ -12,8 +12,8 @@
   --color-accent: #8566ea;
   --color-accent-dark: #553da7;
   --color-accent-light: #ada3d1;
-  --color-text: #f4f4f4;
-  --color-white: #f4f4f4;
+  --color-text: #f7f7f7;
+  --color-white: #f7f7f7;
 
   --text-xs: clamp(0.75rem, 0.9rem, 1.25vw);
   --text-sm: clamp(0.9rem, 1rem, 1.75vw);
