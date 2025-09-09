@@ -7,7 +7,7 @@ Visit: [ollie-moss.dev](https://ollie-moss.dev/)
 
 ## Demo
 
-[Screenshot of the portfolio website.](/assets/preview.png/)
+![Screenshot of the portfolio website.](/assets/preview.png/)
 
 
 ## Installation
