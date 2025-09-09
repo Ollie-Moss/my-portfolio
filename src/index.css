@@ -25,9 +25,9 @@
   --text-3xl: clamp(2.5rem, 4rem, 6vw);
   --text-4xl: clamp(2.5rem, 5rem, 7vw);
 }
-body::before {
-  content: "";
+#bg-gradient {
   position: fixed;
+    z-index: 0;
   top: 50%;
   left: 0;
   width: 80vw;
