@@ -8,13 +8,17 @@ export default function Projects() {
             description: "Fullstack application, for taking notes.",
             technologies: ["React", "Express", "MongoDB", "Typescript"],
             imgPath: "notes-app.png",
-            imgAlt: "Screenshot of note taking app."
+            imgAlt: "Screenshot of note taking app.",
+            github: "https://github.com/Ollie-Moss/note-taking-app"
         },
         {
-            name: "Simplex - Active Development",
-            description: "C++ framework for creating 2D games",
-            technologies: ["OpenGL", "GLFW", "C++"],
-            imgPath: ""
+            name: "Portfolio Website",
+            description: "This portfolio website.",
+            technologies: ["Vite", "React", "Tailwind"],
+            imgPath: "portfolio.png",
+            imgAlt: "Screenshot of portfolio website.",
+            github: "https://github.com/Ollie-Moss/my-portfolio",
+            link: "https://ollie-moss.dev"
         }
     ]
     return (
