@@ -3,7 +3,7 @@ export default function ProfilePicture() {
         <div className="w-full justify-center hidden lg:flex">
             <img
                 src="profile_picture.png"
-                className='mt-12 w-[20vw] h-[20vw]' />
+                className='mt-12 w-[17vw] h-[17vw]' />
         </div>
     );
 }

@@ -18,8 +18,9 @@ export default function Projects() {
         }
     ]
     return (
-        <div>
-            <h1 className="text-lg font-bold mb-8"> Projects</h1>
+        <section className="flex flex-col">
+            <h1 className="text-lg font-bold">Projects</h1>
+            <p className="mb-4">Some projects I have worked on.</p>
             <ul className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                 {
                     projects.map(project => (
@@ -28,7 +29,7 @@ export default function Projects() {
                             project={project} />
                     ))
                 }</ul>
-        </div>
+        </section>
     )
 
 }

@@ -17,9 +17,9 @@ export default function About() {
 };`
 
     return (
-        <section className="mt-8 flex flex-col gap-1">
+        <section className="flex flex-col">
             <h1 className="text-lg font-bold">About</h1>
-            <p>A little bit about myself.</p>
+            <p className="mb-4">A little bit about myself.</p>
             <CodeBlock code={aboutCode} />
         </section>
     )

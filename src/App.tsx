@@ -1,7 +1,7 @@
 import About from './components/About'
 import Footer from './components/Footer'
 import Header from './components/Header'
-import ProfilePicture from './components/Overview'
+import ProfilePicture from './components/ProfilePicture'
 import Projects from './components/Projects'
 import Welcome from './components/WelcomeSection'
 
