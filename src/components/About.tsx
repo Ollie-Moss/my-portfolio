@@ -10,7 +10,7 @@ export default function About() {
     qualification: {
         name: "Bachelor of Information Technology",
         level: 7,
-        status: "3nd Year"
+        status: "3rd Year"
     },
     languages: ["Typescript", "Javascript", "HTML", "CSS", "Python", "C#", "C++", "SQL"],
     technologies: ["React", "Unity", "OpenGL", "Git"],
