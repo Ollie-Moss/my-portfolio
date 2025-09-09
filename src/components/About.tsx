@@ -8,7 +8,7 @@ export default function About() {
     insitution: "NMIT (Nelson Marlborough Institute of Technology)",
     editor: "neovim",
     qualification: {
-    name: "Bachelor of Information Technology",
+        name: "Bachelor of Information Technology",
         level: 7,
         status: "2nd Year"
     },
